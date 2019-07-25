@@ -1,7 +1,9 @@
 <h3><p>Medicine Inventory Search</p></h3>
 <div id='searchID'>
-        <input type="text"    [(ngModel)]='city' placeholder="Enter Name of the Medicine">
-        <app-fetch  [srchMedicine]="city" (operator)='onChange($event)'></app-fetch>
-        {{  response }}
-</div>
+        <input type="text"    [(ngModel)]='medicine' placeholder="Enter Name of the Medicine">
+        <app-fetch  [srchMedicine]="medicine" (operator)='onChange($event)'></app-fetch>
+        
+       
+</div><br/>
+{{  response }}
 

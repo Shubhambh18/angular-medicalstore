@@ -42,7 +42,12 @@ export class FetchComponent implements OnInit {
 
   //   }
   // }
-    this.operator.emit(this.list.get(this.srchMedicine))
+    let str = this.list.get(this.srchMedicine);
+    str = "Available Quantity of "+this.srchMedicine+" : "+str;
+      this.operator.emit(str)
+
+  
+    
 
   }
 
